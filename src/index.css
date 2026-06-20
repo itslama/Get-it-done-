@@ -1,0 +1,225 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', sans-serif;
+background-color: #fde8e8;
+min-height: 100vh;
+padding: 20px;
+}
+
+.app {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.top-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.top-bar h1 {
+font-size: 22px;
+color: #555;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.top-bar button {
+background: white;
+border: none;
+padding: 8px 14px;
+border-radius: 20px;
+cursor: pointer;
+font-size: 13px;
+color: #555;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+}
+
+.card {
+background: white;
+border-radius: 16px;
+border: 2px dashed #e0b4b4;
+padding: 20px;
+}
+
+.card.green {
+background: #e8f5e9;
+border-color: #a5d6a7;
+}
+
+.card.purple {
+background: #ede7f6;
+border-color: #b39ddb;
+}
+
+.card.yellow {
+background: #fffde7;
+border-color: #fff176;
+}
+
+.card h2 {
+font-size: 13px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #888;
+margin-bottom: 14px;
+text-align: center;
+}
+
+.add-task {
+display: flex;
+gap: 8px;
+margin-bottom: 14px;
+}
+
+.add-task input {
+flex: 1;
+padding: 8px 12px;
+border: 1px solid #ddd;
+border-radius: 20px;
+font-size: 13px;
+outline: none;
+background: white;
+}
+
+.add-task button {
+padding: 8px 16px;
+background: white;
+border: 1px solid #ddd;
+border-radius: 20px;
+cursor: pointer;
+font-size: 13px;
+color: #555;
+}
+
+.task-item {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 8px 0;
+border-bottom: 1px solid #f0e0e0;
+}
+
+.task-item input[type="checkbox"] {
+width: 16px;
+height: 16px;
+accent-color: #e57373;
+cursor: pointer;
+}
+
+.task-item span {
+flex: 1;
+font-size: 14px;
+color: #555;
+cursor: pointer;
+}
+
+.task-item.done span {
+text-decoration: line-through;
+color: #aaa;
+}
+
+.task-item button {
+background: none;
+border: none;
+color: #e57373;
+cursor: pointer;
+font-size: 16px;
+}
+
+.progress-bar {
+background: #ddd;
+border-radius: 10px;
+height: 10px;
+margin-top: 10px;
+}
+
+.progress-fill {
+background: #81c784;
+height: 10px;
+border-radius: 10px;
+transition: width 0.3s;
+}
+
+.tracker-stats {
+font-size: 13px;
+color: #666;
+margin-bottom: 8px;
+}
+
+/* Dark mode */
+.dark body {
+background-color: #1E1E2E;
+}
+
+.dark .card {
+background: #2D2D3F;
+border-color: #444;
+color: white;
+}
+
+.dark .task-item span {
+color: #ddd;
+}
+
+/* Auth */
+.auth {
+max-width: 360px;
+margin: 80px auto;
+background: white;
+padding: 30px;
+border-radius: 16px;
+border: 2px dashed #e0b4b4;
+text-align: center;
+}
+
+.auth h2 {
+margin-bottom: 20px;
+color: #555;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.auth input {
+width: 100%;
+padding: 10px 14px;
+margin-bottom: 12px;
+border: 1px solid #ddd;
+border-radius: 20px;
+font-size: 14px;
+outline: none;
+}
+
+.auth button {
+width: 100%;
+padding: 10px;
+background: #e57373;
+color: white;
+border: none;
+border-radius: 20px;
+font-size: 14px;
+cursor: pointer;
+margin-bottom: 12px;
+}
+
+.auth p {
+font-size: 13px;
+color: #888;
+cursor: pointer;
+}
+
+.auth p:hover {
+color: #e57373;
+}
